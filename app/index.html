@@ -6,36 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS basics</title>
     <!-- <script src="/script.js" defer></script> -->
-    <script src="script.js" defer></script>
+    <script src="script1.js" defer></script>
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="form-container">
-    <form id="add-movie-form">
-      <label for="movie-name">Movie name:</label>
-      <input
-        type="text"
-        name="movie-name"
-        placeholder="Enter movie name"
-        id="movie-name"
-        class="pink"
-        
-      />
- <br><br>
-      <label for="movie-year">Movie year:</label>
-      <input
-        type="number"
-        name="movie-year"
-        placeholder="Enter movie year"
-        id="movie-year"
-        color="grey"
-      
-      />
- <br/><br/>
-      <input type="submit" value="Add movie" />
-    </form>
-  </div>
+      <form id="add-movie-form">
+        <label for="movie-name">Movie name:</label>
+        <input
+          type="text"
+          name="movie-name"
+          placeholder="Enter movie name"
+          id="movie-name"
+          maxlength="50"
+          size="10"
+          class="pink"
+          required
+        />
+        <br /><br />
+        <label for="movie-year">Movie year:</label><br />
+        <input
+          type="number"
+          name="movie-year"
+          placeholder="Enter movie year"
+          id="movie-year"
+          maxlength="4"
+          class="grey"
+          max="2023"
+          min="1500"
+          size="20"
+          width="30px"
+          height="30px"
+          required
+        />
+        <br /><br />
+        <input type="submit" value="Add movie" id="form-container" />
+      </form>
+    </div>
     <div id="app"></div>
   </body>
 </html>
